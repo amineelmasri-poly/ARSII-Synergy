@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "amine Admin",
+      "email": "admin@arsii.org",
+      "role": "ADMIN",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex"
+    },
+    {
+      "id": "2",
+      "name": "fatet Manager",
+      "email": "manager@arsii.org",
+      "role": "MANAGER",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
+    },
+    {
+      "id": "3",
+      "name": "hamma Lead",
+      "email": "lead@arsii.org",
+      "role": "TEAM_LEAD",
+      "teamId": "t1",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Tom"
+    },
+    {
+      "id": "4",
+      "name": "fatet2 User",
+      "email": "user@arsii.org",
+      "role": "USER",
+      "teamId": "t1",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Lisa"
+    },
+    {
+      "id": "5",
+      "name": "me7rez User",
+      "email": "mike@arsii.org",
+      "role": "USER",
+      "teamId": "t1",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Mike"
+    }
+  ],
+  "teams": [
+    {
+      "id": "t1",
+      "name": "Frontend Web Team",
+      "leadId": "3",
+      "projectId": "p1"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "ARSII Synergy MVP",
+      "description": "Unified App for Project Management",
+      "status": "ACTIVE",
+      "progress": 30
+    },
+    {
+      "id": "p2",
+      "name": "AI Night Landing Page",
+      "description": "Marketing site for the AI Night event",
+      "status": "PLANNING",
+      "progress": 0
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task1",
+      "title": "Set up React App",
+      "description": "Initialize Vite + React + TS",
+      "projectId": "p1",
+      "assigneeId": "4",
+      "reviewerId": "3",
+      "status": "DONE",
+      "priority": "HIGH",
+      "deadline": "2026-03-01T12:00:00.000Z",
+      "createdAt": "2026-02-28T09:00:00.000Z"
+    },
+    {
+      "id": "task2",
+      "title": "Implement Dashboard",
+      "description": "Build role-based views",
+      "projectId": "p1",
+      "assigneeId": "4",
+      "reviewerId": "3",
+      "status": "DONE",
+      "priority": "HIGH",
+      "deadline": "2026-03-02T12:00:00.000Z",
+      "createdAt": "2026-02-28T10:00:00.000Z"
+    },
+    {
+      "id": "task3",
+      "title": "Design System",
+      "description": "Create glassmorphism tokens",
+      "projectId": "p1",
+      "assigneeId": "5",
+      "reviewerId": "3",
+      "status": "TODO",
+      "priority": "MEDIUM",
+      "deadline": "2026-03-03T12:00:00.000Z",
+      "createdAt": "2026-02-28T11:00:00.000Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
